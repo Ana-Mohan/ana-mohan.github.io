@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bhuvaneshwari (Ana) Mohan — Applied AI & Healthcare Validation</title>
+<meta name="description" content="Bhuvaneshwari (Ana) Mohan: 8+ years in U.S. healthcare payer quality engineering, now building AI systems for claims and data validation. Toronto, ON.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Bhuvaneshwari (Ana) Mohan — Applied AI & Healthcare Validation">
+<meta property="og:description" content="8+ years in U.S. healthcare payer quality engineering, now building AI tools for claims and data validation. Toronto, ON.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Bhuvaneshwari (Ana) Mohan — Applied AI & Healthcare Validation">
+<meta name="twitter:description" content="8+ years in U.S. healthcare payer quality engineering, now building AI tools for claims and data validation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#F5F6F2;
+  --surface:#FFFFFF;
+  --ink:#14233A;
+  --ink-soft:#4A5869;
+  --line:#D9DED8;
+  --accent:#1D6A84;
+  --accent-soft:#E2EEF2;
+  --amber:#9A6A0C;
+  --amber-soft:#F6ECD6;
+  --green:#2E6B47;
+  --green-soft:#E1EFE5;
+  --seg-bg:#14233A;
+  --seg-ink:#DCE5EC;
+  --seg-sep:#7FC3D8;
+  --seg-dim:#7D8C9C;
+  --sans:"Instrument Sans", "Segoe UI", -apple-system, Helvetica, Arial, sans-serif;
+  --mono:"JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:light;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1821; --surface:#16222E; --ink:#E4EAF0; --ink-soft:#A3B1BF; --line:#2A3946;
+    --accent:#6BBAD3; --accent-soft:#1A3442; --amber:#E2B657; --amber-soft:#3A2F17;
+    --green:#7CC79A; --green-soft:#1B3427; --seg-bg:#0A1118; --seg-ink:#DCE5EC; --seg-sep:#7FC3D8; --seg-dim:#6E7E8E;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1821; --surface:#16222E; --ink:#E4EAF0; --ink-soft:#A3B1BF; --line:#2A3946;
+  --accent:#6BBAD3; --accent-soft:#1A3442; --amber:#E2B657; --amber-soft:#3A2F17;
+  --green:#7CC79A; --green-soft:#1B3427; --seg-bg:#0A1118; --seg-ink:#DCE5EC; --seg-sep:#7FC3D8; --seg-dim:#6E7E8E;
+  color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:1.0625rem;line-height:1.6;-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:var(--accent);text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--bg)}
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:9;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
+.mark{font-weight:600;color:var(--ink);text-decoration:none;letter-spacing:-.01em}
+nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0}
+nav a{color:var(--ink-soft);text-decoration:none;font-size:.95rem}
+nav a:hover{color:var(--ink)}
+@media (max-width:720px){nav ul{gap:14px} nav li.hide-sm{display:none}}
+
+/* hero */
+.hero{padding:72px 0 56px}
+.hero-grid{display:grid;grid-template-columns:1fr 1.15fr;gap:48px;align-items:center}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero{padding-top:44px}}
+h1{font-size:clamp(2.1rem,4.4vw,3.25rem);line-height:1.08;letter-spacing:-.025em;font-weight:600;margin:0 0 20px}
+.lede{font-size:1.2rem;color:var(--ink-soft);max-width:34em;margin:0 0 28px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:8px;font-weight:600;font-size:.98rem;text-decoration:none;border:1px solid var(--ink);color:var(--ink);background:transparent}
+.btn.primary{background:var(--ink);color:var(--bg)}
+.btn:hover{transform:translateY(-1px)}
+
+/* the X12 profile transaction */
+.tx{background:var(--seg-bg);color:var(--seg-ink);border-radius:14px;padding:22px 0 14px;font-family:var(--mono);font-size:.86rem;box-shadow:0 30px 60px -30px rgba(10,20,35,.55)}
+.tx-head{display:flex;justify-content:space-between;align-items:center;padding:0 22px 14px;border-bottom:1px solid rgba(255,255,255,.08);font-family:var(--sans);font-size:.85rem;color:var(--seg-dim)}
+.tx-toggle{font:inherit;color:var(--seg-ink);background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:999px;padding:4px 12px;cursor:pointer}
+.tx-toggle:hover{background:rgba(255,255,255,.12)}
+.seg{display:grid;grid-template-columns:1fr;padding:9px 22px;border-bottom:1px solid rgba(255,255,255,.05);opacity:0;transform:translateY(4px);animation:segIn .45s ease forwards}
+.seg:last-child{border-bottom:0}
+.raw{white-space:nowrap;overflow-x:auto;scrollbar-width:none}
+.raw::-webkit-scrollbar{display:none}
+.raw b{color:#fff;font-weight:500}
+.raw i{font-style:normal;color:var(--seg-sep)}
+.parsed{font-family:var(--sans);font-size:.95rem;color:var(--seg-ink);display:none}
+.parsed small{display:block;color:var(--seg-dim);font-size:.78rem;margin-bottom:1px}
+.tx.show-parsed .raw{display:none}
+.tx.show-parsed .parsed{display:block}
+.seg.ok .parsed span::after{content:" ✓";color:var(--seg-sep)}
+@keyframes segIn{to{opacity:1;transform:none}}
+
+/* sections */
+section{padding:64px 0;border-top:1px solid var(--line)}
+h2{font-size:clamp(1.6rem,2.6vw,2rem);letter-spacing:-.02em;font-weight:600;margin:0 0 10px}
+.sub{color:var(--ink-soft);max-width:40em;margin:0 0 36px}
+h3{font-size:1.2rem;letter-spacing:-.01em;margin:0 0 6px;font-weight:600}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:56px}
+@media (max-width:820px){.about-grid{grid-template-columns:1fr;gap:28px}}
+.about-grid p{max-width:36em;margin:0 0 16px}
+.facts{margin:0;padding:0;list-style:none;border-left:2px solid var(--accent);padding-left:20px}
+.facts li{margin-bottom:16px}
+.facts strong{display:block;font-size:1.6rem;letter-spacing:-.02em;line-height:1.15}
+.facts span{color:var(--ink-soft);font-size:.95rem}
+
+/* projects */
+.proj{display:grid;grid-template-columns:200px 1fr;gap:28px;padding:28px 0;border-bottom:1px solid var(--line)}
+.proj:first-of-type{padding-top:4px}
+@media (max-width:720px){.proj{grid-template-columns:1fr;gap:10px}}
+.status{display:inline-block;font-size:.82rem;font-weight:600;padding:3px 10px;border-radius:999px}
+.st-prod{background:var(--green-soft);color:var(--green)}
+.st-dev{background:var(--amber-soft);color:var(--amber)}
+.st-plan{background:var(--accent-soft);color:var(--accent)}
+.proj-meta{color:var(--ink-soft);font-size:.9rem;margin-top:10px}
+.proj p{margin:0 0 12px;max-width:40em}
+.stack{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.stack li{font-size:.84rem;color:var(--ink-soft);border:1px solid var(--line);border-radius:6px;padding:2px 8px;background:var(--surface)}
+.flag{font-size:.92rem;color:var(--ink-soft);margin-top:24px}
+
+/* domain */
+.tsets{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:1px;background:var(--line);border:1px solid var(--line);border-radius:12px;overflow:hidden}
+.tset{background:var(--surface);padding:18px 18px 16px}
+.tset .code{font-family:var(--mono);font-size:1.15rem;color:var(--accent);font-weight:500}
+.tset div:last-child{color:var(--ink-soft);font-size:.93rem}
+
+/* skills */
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 48px}
+@media (max-width:720px){.skills{grid-template-columns:1fr}}
+.skills h3{font-size:1.02rem;margin-bottom:8px}
+.skills p{margin:0;color:var(--ink-soft)}
+
+/* timeline */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.timeline li{position:relative;padding:0 0 30px 40px}
+.timeline li::before{content:"";position:absolute;left:0;top:7px;width:16px;height:16px;border-radius:50%;background:var(--bg);border:2px solid var(--ink-soft)}
+.timeline li.now::before{border-color:var(--accent);background:var(--accent)}
+.when{color:var(--ink-soft);font-size:.92rem}
+.timeline p{margin:6px 0 0;max-width:42em}
+.dur{font-size:.86rem;color:var(--ink-soft)}
+
+/* creds */
+.creds{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+@media (max-width:820px){.creds{grid-template-columns:1fr;gap:28px}}
+.creds ul{list-style:none;margin:0;padding:0}
+.creds li{padding:10px 0;border-bottom:1px solid var(--line)}
+.creds li span{display:block;color:var(--ink-soft);font-size:.9rem}
+
+/* contact */
+.contact{padding:80px 0 96px}
+.contact h2{font-size:clamp(1.8rem,3.4vw,2.6rem);max-width:18em}
+footer{border-top:1px solid var(--line);padding:24px 0 32px;color:var(--ink-soft);font-size:.88rem}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#top">Ana Mohan</a>
+    <nav aria-label="Sections">
+      <ul>
+        <li><a href="#work">Projects</a></li>
+        <li class="hide-sm"><a href="#domain">Domain</a></li>
+        <li class="hide-sm"><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="hero-grid">
+      <div>
+        <h1>I spent eight years making sure healthcare claims data is right. Now I build the AI that checks it.</h1>
+        <p class="lede">I'm Bhuvaneshwari (Ana) Mohan, a Technical Test Lead at Infosys in Toronto. I lead a six-person quality engineering team on U.S. health plan systems and build AI tools for claims and data validation.</p>
+        <div class="cta">
+          <a class="btn primary" href="#work">See my projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/bhuvaneshwari-mohan-96b804133/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="tx" id="tx" aria-label="Profile written as an X12 transaction">
+        <div class="tx-head">
+          <span>profile.x12</span>
+          <button class="tx-toggle" id="txToggle" type="button" aria-pressed="false">Read it in English</button>
+        </div>
+        <div class="seg" style="animation-delay:.05s"><div class="raw"><b>ST</b><i>*</i>PRF<i>*</i>0001<i>~</i></div><div class="parsed"><small>Transaction start</small><span>Profile of a healthcare data engineer</span></div></div>
+        <div class="seg" style="animation-delay:.15s"><div class="raw"><b>NM1</b><i>*</i>IL<i>*</i>1<i>*</i>MOHAN<i>*</i>BHUVANESHWARI<i>*</i>ANA<i>~</i></div><div class="parsed"><small>Name</small><span>Bhuvaneshwari Mohan, goes by Ana</span></div></div>
+        <div class="seg" style="animation-delay:.25s"><div class="raw"><b>N4</b><i>*</i>TORONTO<i>*</i>ON<i>*</i>CA<i>~</i></div><div class="parsed"><small>Location</small><span>Toronto, Ontario</span></div></div>
+        <div class="seg" style="animation-delay:.35s"><div class="raw"><b>REF</b><i>*</i>ROL<i>*</i>TECHNICAL TEST LEAD<i>*</i>TEAM:6<i>~</i></div><div class="parsed"><small>Current role</small><span>Technical Test Lead at Infosys, leading six engineers</span></div></div>
+        <div class="seg" style="animation-delay:.45s"><div class="raw"><b>DTP</b><i>*</i>EXP<i>*</i>RD8<i>*</i>20180501-PRESENT<i>~</i></div><div class="parsed"><small>Experience</small><span>8+ years in U.S. healthcare payer quality engineering</span></div></div>
+        <div class="seg" style="animation-delay:.55s"><div class="raw"><b>LQ</b><i>*</i>FOCUS<i>*</i>APPLIED AI<i>*</i>VALIDATION<i>~</i></div><div class="parsed"><small>Focus</small><span>Applied AI for claims and data validation</span></div></div>
+        <div class="seg ok" style="animation-delay:.65s"><div class="raw"><b>SE</b><i>*</i>7<i>*</i>0001<i>~</i></div><div class="parsed"><small>Transaction end</small><span>7 segments, validated</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap about-grid">
+      <div>
+        <h2>About</h2>
+        <p>Most of my career has been spent inside the plumbing of U.S. health insurance: enrollment files, claims, remittances, eligibility checks, and the systems that move them between providers and payers. I know what a broken 837 looks like and what it costs when one slips through.</p>
+        <p>Over the last two years I've moved from testing those systems to building tools that test them. That started with an internal automation app now in production, and has grown into AI agents that read mapping documents, derive validation rules for a person to approve, and check data at scale.</p>
+        <p>I care about AI that people can trust in regulated work: outputs you can trace, decisions a human signs off on, and tools usable by teammates who don't write code.</p>
+      </div>
+      <ul class="facts">
+        <li><strong>8+ years</strong><span>U.S. healthcare payer QA, since 2018</span></li>
+        <li><strong>6 engineers</strong><span>on the team I lead at Infosys</span></li>
+        <li><strong>1 app in production</strong><span>an automation platform I built from scratch</span></li>
+        <li><strong>About 30% less</strong><span>manual coding effort reported in a GitHub Copilot pilot I ran</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <h2>Projects</h2>
+      <p class="sub">Each project is labelled with where it actually stands. Most were built for an employer client, so the code isn't public, but I'm happy to walk through the design.</p>
+
+      <article class="proj">
+        <div><span class="status st-prod">In production</span><div class="proj-meta">Infosys, internal</div></div>
+        <div>
+          <h3>AI-assisted test automation platform</h3>
+          <p>A greenfield internal application that replaced a scattered set of standalone scripts with one shared interface, so testers can run automation without touching code. I designed and built it end to end.</p>
+          <ul class="stack"><li>Python</li><li>FastAPI</li><li>React</li><li>PyInstaller</li></ul>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div><span class="status st-dev">In development</span><div class="proj-meta">Built solo</div></div>
+        <div>
+          <h3>Generic AI validation agent</h3>
+          <p>An agent that reads mapping documents in whatever layout a team uses, proposes how to interpret them, asks clarifying questions, and turns the answers into validation rules a tester approves. It then compares X12 files against Snowflake and produces traceable field-level pass/fail results. First use case: dental claims (837D). It runs as a VS Code extension so teammates with no AI or scripting background can use it in plain language.</p>
+          <ul class="stack"><li>Python</li><li>LLM agents</li><li>VS Code extension</li><li>GitHub Copilot</li><li>Snowflake</li><li>X12</li></ul>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div><span class="status st-prod">Built</span><div class="proj-meta">Legacy-to-cloud migration</div></div>
+        <div>
+          <h3>Snowflake/Netezza reconciliation framework</h3>
+          <p>A configuration-driven framework that reads mapping workbooks and runs field-level comparisons between the legacy Netezza warehouse and Snowflake, with sampling and exception reports, so a new comparison is a config change instead of new code.</p>
+          <ul class="stack"><li>Python</li><li>SQL</li><li>Snowflake</li><li>Netezza</li></ul>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div><span class="status st-plan">Designed, build starting</span><div class="proj-meta">Proposed by me for a U.S. health plan client</div></div>
+        <div>
+          <h3>Claims intelligence platform</h3>
+          <p>A retrieval-augmented system for triaging 837 claims and 835 remittances: it pulls the relevant rules, history and evidence for a claim and explains why it needs attention, with every answer grounded in retrieved sources.</p>
+          <ul class="stack"><li>FastAPI</li><li>PostgreSQL</li><li>pgvector</li><li>RAG</li><li>AWS</li></ul>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div><span class="status st-plan">Roadmap</span><div class="proj-meta">Built one agent at a time</div></div>
+        <div>
+          <h3>Agentic testing lifecycle</h3>
+          <p>A plan to turn the full testing lifecycle into cooperating agents: requirement analysis, test data creation, validation, and reporting, linked to Jira/Xray and coordinated by an orchestrator, with a person approving each step. The validation agent above is the first piece.</p>
+          <ul class="stack"><li>Agent orchestration</li><li>Human approval gates</li><li>Jira/Xray</li></ul>
+        </div>
+      </article>
+
+      <article class="proj">
+        <div><span class="status st-prod">Completed</span><div class="proj-meta">Team pilot</div></div>
+        <div>
+          <h3>GitHub Copilot adoption pilot</h3>
+          <p>Ran a pilot of GitHub Copilot for test automation work and reported roughly 30% less manual coding effort. I also added password encryption to a shared Selenium framework used by 300+ people.</p>
+          <ul class="stack"><li>GitHub Copilot</li><li>Selenium</li><li>TestNG</li></ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="domain">
+    <div class="wrap">
+      <h2>The transactions I work with every day</h2>
+      <p class="sub">Healthcare data moves between providers and insurers as X12 EDI transactions. I've tested every one of these across their full lifecycle, along with the Facets, Boomi and Edifecs systems that process them.</p>
+      <div class="tsets">
+        <div class="tset"><div class="code">834</div><div>Member enrollment</div></div>
+        <div class="tset"><div class="code">837 P / I / D</div><div>Professional, institutional and dental claims</div></div>
+        <div class="tset"><div class="code">835</div><div>Payment and remittance</div></div>
+        <div class="tset"><div class="code">820</div><div>Premium payment</div></div>
+        <div class="tset"><div class="code">270 / 271</div><div>Eligibility inquiry and response</div></div>
+        <div class="tset"><div class="code">276 / 277</div><div>Claim status inquiry and response</div></div>
+        <div class="tset"><div class="code">277CA</div><div>Claim acknowledgement</div></div>
+        <div class="tset"><div class="code">278</div><div>Prior authorization</div></div>
+        <div class="tset"><div class="code">999 / TA1</div><div>File and interchange acknowledgements</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="wrap">
+      <h2>Skills</h2>
+      <p class="sub">Tools I use in real work, grouped by what they're for.</p>
+      <div class="skills">
+        <div><h3>Applied AI</h3><p>LLM-based document interpretation, agent design with human approval, retrieval-augmented generation, pgvector, GitHub Copilot agent mode</p></div>
+        <div><h3>Engineering</h3><p>Python, FastAPI, React, SQL, REST APIs, VS Code extensions</p></div>
+        <div><h3>Data and cloud</h3><p>Snowflake, Netezza, PostgreSQL, AWS</p></div>
+        <div><h3>Test automation</h3><p>Selenium, TestNG, API testing frameworks</p></div>
+        <div><h3>Healthcare</h3><p>X12 EDI, HIPAA, Facets, Boomi and Edifecs integration flows</p></div>
+        <div><h3>Leadership</h3><p>Test strategy, defect governance, release reporting, mentoring a team of six, Agile delivery</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="wrap">
+      <h2>Experience</h2>
+      <p class="sub">8 years 5 months in quality engineering, 5 of them at Infosys.</p>
+      <ol class="timeline">
+        <li class="now">
+          <h3>Technical Test Lead, Infosys</h3>
+          <div class="when">Nov 2023 to present, Mississauga, ON <span class="dur">(2 yrs 11 mos)</span></div>
+          <p>Lead a six-person quality engineering team for a U.S. health plan across functional, integration, automation and data-validation work. Own test strategy, defect governance and release reporting. Built the automation platform and validation tooling described above.</p>
+        </li>
+        <li>
+          <h3>Test Analyst, Infosys</h3>
+          <div class="when">Oct 2021 to Nov 2023, Bengaluru <span class="dur">(2 yrs 1 mo)</span></div>
+          <p>Tested EDI transaction flows through Facets, Boomi and Edifecs for a U.S. health plan. Received the INSTA award in 2023.</p>
+        </li>
+        <li>
+          <h3>Test Associate, Cognizant</h3>
+          <div class="when">May 2018 to Sep 2021, Chennai <span class="dur">(3 yrs 4 mos)</span></div>
+          <p>U.S. healthcare payer testing. Named Performer of the Year in 2020 and 2021.</p>
+        </li>
+        <li>
+          <h3>Business Development Analyst, Think &amp; Learn</h3>
+          <div class="when">May 2017 to May 2018, Bengaluru <span class="dur">(1 yr)</span></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="credentials">
+    <div class="wrap">
+      <h2>Credentials</h2>
+      <div class="creds" style="margin-top:28px">
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>ISTQB Certified Tester Foundation Level 4.0<span>2025</span></li>
+            <li>Certified ScrumMaster<span>2025</span></li>
+            <li>AWS Certified AI Practitioner<span>In progress</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Recognition</h3>
+          <ul>
+            <li>Infosys INSTA Award<span>2023 and 2024</span></li>
+            <li>Infosys Be The Navigator<span>2024</span></li>
+            <li>Cognizant Performer of the Year<span>2020 and 2021</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Education</h3>
+          <ul>
+            <li>B.Tech, Information Technology<span>Sona College of Technology, 2013 to 2017. CGPA 8.6, top 10% of class</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="wrap">
+      <h2>Building AI for healthcare data? I'd like to hear about it.</h2>
+      <p class="sub">I'm open to Applied AI engineering roles in Toronto and remote.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:Bhuvanasona1996@gmail.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/bhuvaneshwari-mohan-96b804133/" target="_blank" rel="noopener">Connect on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Bhuvaneshwari (Ana) Mohan, Toronto. Project descriptions exclude client data and internal details.</div>
+</footer>
+
+<script>
+(function(){
+  var tx=document.getElementById('tx'), btn=document.getElementById('txToggle');
+  function sync(on){
+    btn.setAttribute('aria-pressed',on?'true':'false');
+    btn.textContent=on?'Show raw X12':'Read it in English';
+  }
+  if(window.matchMedia && window.matchMedia('(max-width: 600px)').matches){
+    tx.classList.add('show-parsed'); sync(true);
+  }
+  btn.addEventListener('click',function(){
+    sync(tx.classList.toggle('show-parsed'));
+  });
+})();
+</script>
+</body>
+</html>
